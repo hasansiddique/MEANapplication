@@ -1,0 +1,41 @@
+<h2>Login</h2>
+
+<div class="well">
+    <form name="loginForm" class="form-horizontal" novalidate ng-submit="loginUserAccount()">
+        <legend>Login using your email Address</legend>
+        <p></p>
+
+        <div class="form-group">
+            <label for="email" class="col-lg-2 control-label">Email</label>
+
+            <div class="col-lg-10">
+                <input ng-model="loginUser.email" type="text" class="form-control" name="email"
+                       placeholder="Your Email Address..." required="required"/>
+            <span ng-show="loginForm.email.$error.required" class="text-danger small">
+                This field is required.
+            </span>
+            <span ng-show="loginForm.email.$error.email" class="text-danger small">
+                Email is not valid!
+            </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-lg-2 control-label">Password</label>
+
+            <div class="col-lg-10">
+                <input ng-model="loginUser.password" type="password" class="form-control"
+                       name="password" placeholder="Your Password..."
+                       required="required"/>
+            <span ng-show="loginForm.password.$error.required" class="text-danger small">
+                This field is required.
+            </span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+                <input type="submit" ng-disabled="loginForm.$invalid" class="btn btn-primary" value="Login"/>
+            </div>
+        </div>
+    </form>
+</div>

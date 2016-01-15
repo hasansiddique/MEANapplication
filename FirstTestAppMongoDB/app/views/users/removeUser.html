@@ -1,0 +1,8 @@
+<span class="label label-danger" style="cursor: pointer;" ng-show="!removing"
+      title="Remove" ng-click="showRemoveBox()">Delete</span>
+<span ng-show="removing">
+    <span class="label label-success" style="cursor: pointer;"
+          ng-click="InitiateRemoval()">Remove</span>
+    <span class="label label-danger" style="cursor: pointer;"
+          ng-click="showRemoveBox()">Cancel</span>
+</span>

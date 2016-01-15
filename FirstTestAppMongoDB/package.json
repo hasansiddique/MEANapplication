@@ -1,0 +1,29 @@
+{
+  "name": "newapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "angular app",
+  "main": "node-server/webserver.js",
+  "dependencies": {
+    "bower": "^1.7.2",
+    "express": "^4.13.3",
+    "mongoose"   : "~3.6.2",
+    "morgan"     : "~1.2.2",
+    "body-parser": "~1.5.2",
+    "method-override": "~2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "angular",
+    "node"
+  ],
+  "author": "Hasan Siddique",
+  "license": "ISC"
+}

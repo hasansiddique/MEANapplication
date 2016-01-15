@@ -1,0 +1,18 @@
+input.ng-valid {
+    border: 2px solid #18bc9c;
+}
+textarea.ng-valid {
+    border: 2px solid #18bc9c;
+}
+input.ng-invalid {
+    border: 2px solid #e74c3c;
+}
+textarea.ng-invalid {
+    border: 2px solid #e74c3c;
+}
+input.ng-invalid-minlength {
+    border: 2px solid #f39c12;
+}
+textarea.ng-invalid-minlength {
+    border: 2px solid #f39c12;
+}

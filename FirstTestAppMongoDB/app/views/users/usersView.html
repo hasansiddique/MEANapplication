@@ -1,0 +1,33 @@
+<div ng-show="user.userStoredName">
+    <h2>Welcome Mr, {{ user.userStoredName }}</h2>
+
+    <div class="well">
+        <legend>User Information</legend>
+        <table class="table table-bordered table-responsive">
+            <tr>
+                <td><b>Name</b></td>
+                <td>{{ user.userStoredName }}</td>
+            </tr>
+            <tr>
+                <td><b>Email</b></td>
+                <td>{{ user.userStoredEmail }}</td>
+            </tr>
+            <tr>
+                <td><b>Age</b></td>
+                <td>{{ user.userStoredAge }}</td>
+            </tr>
+            <tr>
+                <td><b>Date of Birth</b></td>
+                <td>{{ user.userStoredDob }}</td>
+            </tr>
+            <tr>
+                <td><b>Status</b></td>
+                <td>{{ user.userStoredStatus }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="well" ng-show="!user.userStoredName">
+    <h2 class="text-danger">No information to show. Please login first.</h2>
+</div>

@@ -1,0 +1,32 @@
+<h2>All Users</h2>
+
+<table class="table table-bordered table-responsive table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>DOB</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    <tr ng-show="users.usersList" ng-repeat="user in users.usersList">
+        <td ng-if="user.name">{{ user.name }}</td>
+        <td ng-if="!user.name" class="text-danger">No data</td>
+        <td ng-if="user.age">{{ user.age }}</td>
+        <td ng-if="!user.age" class="text-danger">No data</td>
+        <td ng-if="user.email"> {{ user.email }}</td>
+        <td ng-if="!user.email" class="text-danger">No data</td>
+        <td ng-if="user.dob">{{ user.dob }}</td>
+        <td ng-if="!user.dob" class="text-danger">No Data</td>
+        <td ng-if="user.status">{{ user.status }}</td>
+        <td ng-if="!user.status" class="text-danger">No data</td>
+        <td>
+            <remove-user user="user"></remove-user>
+        </td>
+    </tr>
+    <tr ng-show="!users.usersList">
+        <td colspan="5" class="text-danger text-center">
+            No Users found.
+        </td>
+    </tr>
+</table>

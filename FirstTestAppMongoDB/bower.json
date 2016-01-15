@@ -1,0 +1,24 @@
+{
+  "name": "newapp",
+  "description": "angular app",
+  "main": "index.js",
+  "authors": [
+    "Hasan Siddique"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "node"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
