@@ -24,27 +24,10 @@ module.exports.getUsers = function (req, res) {
 }
 
 module.exports.saveUser = function (req, res) {
-    /*var email = User.find({email: req.body.email}, function (err, newUser) {
-     if (err) {
-     res.send(err);
-     }
-     console.log(newUser.email);
-     res.json(newUser);
-     });
-     console.log(email);
-     if(email.email === req.body.email)
-     {
-     console.log("I matched");
-     }
-     else{
-     console.log("No match");
-     }*/
     User.find({email: req.body.email}, function (err, newUser) {
         if (err) {
             res.send(err);
         }
-        //console.log(newUser.count);
-        //console.log(newUser.length);
         if (newUser.length == 0) {
             User.create({
                     name: req.body.name,
